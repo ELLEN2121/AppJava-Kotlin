@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvTituloRedefinir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Redefinir Senha"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60dp"/>
+
+    <EditText
+        android:id="@+id/etEmailRedefinir"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/editortexto_back"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloRedefinir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <EditText
+        android:id="@+id/etCpfRedefinir"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:hint="CPF"
+        android:inputType="number"
+        android:maxLength="11"
+        android:background="@drawable/editortexto_back"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/etEmailRedefinir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/etChaveSecreta"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:hint="Chave secreta"
+        android:inputType="text"
+        android:background="@drawable/editortexto_back"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/etCpfRedefinir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/etNovaSenha"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:hint="Nova senha"
+        android:inputType="textPassword"
+        android:background="@drawable/editortexto_back"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/etChaveSecreta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnRedefinirSenha"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:text="Redefinir Senha"
+        android:textColor="@color/black"
+        android:background="@drawable/editortexto_back"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/etNovaSenha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
